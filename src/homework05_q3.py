@@ -3,6 +3,7 @@
 import numpy as np
 import math
 import sympy as sym
+import csv
 
 e = 0.100 #ecentricity
 M = np.deg2rad(5) #mean anomoly
@@ -20,6 +21,10 @@ while True:
     if abs(E0[-1] - Ex) < np.deg2rad(0.000001):
         break
     E0.append(Ex)
+
+with open("module05-prob03-output.csv", "w") as csvfile:
+    csvwriter = csv.writer(csvfile)
+    csvwriter.writerow(E0)
 
 print(E0)
 
