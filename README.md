@@ -6,3 +6,5 @@
 ## Problems 1-3. Kepler Solvers
 
 ### Instructions for using the Kepler solver code
+
+# For this code I have done it all in python. run the problems that are located in the src folder. The output is both printed and shown in the output files for each problem located int the same folder.
